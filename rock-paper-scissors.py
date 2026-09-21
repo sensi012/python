@@ -24,8 +24,10 @@ while running:
     else:
         print("You lose!")
 
-    play_again = input("Play again? (y/n): ").lower()
-    if play_again != "y":
+    # play_again = input("Play again? (y/n): ").lower()
+    # if play_again != "y":
+    #     running = False
+    if not input("Play again? (y/n): ").lower() == "y":
         running = False
 
 print("Thanks for playing!")
